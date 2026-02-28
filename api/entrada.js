@@ -35,6 +35,7 @@ export default async function handler(req, res) {
         }]);
 
     if (error) {
+        console.log("ERROR SUPABASE:", error);
         return res.status(500).json({ mensaje: "Error" });
     }
 
