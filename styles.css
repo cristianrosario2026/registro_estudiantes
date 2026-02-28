@@ -1,0 +1,149 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== FONDO ===== */
+body {
+    background: #f1f5f9;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== CONTENEDOR ===== */
+.container {
+    background: white;
+    width: 420px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== TITULO ARRIBA CENTRADO ===== */
+.container h1 {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-bottom: 30px;
+    color: #1e293b;
+    font-size: 26px;
+}
+
+/* ===== INPUTS ===== */
+input {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+    font-size: 15px;
+}
+
+/* ===== EFECTO INPUT ===== */
+input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+/* ===== BOTON ===== */
+input[type="submit"] {
+    background: #2563eb;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #1d4ed8;
+}
+
+/* ===== SEPARACION ===== */
+form {
+    margin-top: 10px;
+}
+
+/* ===== BOTONES ===== */
+button,
+input[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* HOVER */
+button:hover,
+input[type="submit"]:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* BOTON SALIDA */
+.btn-salida {
+    background: #ef4444;
+}
+
+.btn-salida:hover {
+    background: #dc2626;
+}
+
+/* ===== CONTENEDOR BOTONES ===== */
+.botones {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* ===== BOTONES GENERALES ===== */
+.botones button {
+    flex: 1;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+}
+
+/* ===== BOTON ENTRADA ===== */
+.btn-entrada {
+    background: #2563eb;
+}
+
+.btn-entrada:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* ===== BOTON SALIDA ===== */
+.btn-salida {
+    background: #ef4444;
+}
+
+.btn-salida:hover {
+    background: #dc2626;
+    transform: translateY(-2px);
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:450px) {
+    .botones {
+        flex-direction: column;
+    }
+}

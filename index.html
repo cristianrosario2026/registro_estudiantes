@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Sala de Computo</title>
+    <link rel="icon" href="IMAGENES/icono.jpg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>💻 Registro Sala de Cómputo</h1>
+        <form id="registroForm">
+            <input type="text" id="nombre" placeholder="Nombre" required><br><br>
+            <input type="text" id="carrera" placeholder="Carrera" required><br><br>
+            <input type="text" id="semestre" placeholder="Semestre" required><br><br>
+            <input type="text" id="matricula" placeholder="Matrícula" required><br><br>
+            <div class="botones">
+                <button type="submit" class="btn-entrada">Registrar Entrada</button>
+                <button type="button" class="btn-salida" onclick="registrarSalida()">Registrar Salida</button>
+            </div>
+        </form>
+        <script src="app.js"></script>
+</body>
+
+</html>
