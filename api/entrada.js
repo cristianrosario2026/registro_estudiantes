@@ -7,6 +7,8 @@ const supabase = createClient(
 
 export default async function handler(req, res) {
 
+    console.log("BODY:", req.body);
+
     if (req.method !== "POST") {
         return res.status(405).json({ mensaje: "Método no permitido" });
     }
@@ -18,13 +20,13 @@ export default async function handler(req, res) {
         .select("*")
         .eq("matricula", matricula)
         .eq("estado", "dentro")
-        .single();
+        .maybeSingle();
 
     if (existente) {
         return res.json({ mensaje: "Alumno ya dentro" });
     }
 
-    const { error } = await supabase
+    const { data, error } = await supabase
         .from("registros")
         .insert([{
             nombre,
