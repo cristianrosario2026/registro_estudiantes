@@ -11,7 +11,7 @@ document
             matricula: document.getElementById("matricula").value
         };
 
-        await fetch("http://localhost:3000/entrada", {
+        await fetch("/api/entrada", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -30,7 +30,7 @@ async function registrarSalida() {
     const matricula =
         document.getElementById("matricula").value;
 
-    await fetch("http://localhost:3000/salida", {
+    await fetch("/api/salida", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
